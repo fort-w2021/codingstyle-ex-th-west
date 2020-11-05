@@ -6,10 +6,10 @@ v <- z^2
 # Function that computes a 95% Confidence Interval given a numeric vector
 confidence_interval <- function(data) {
   if (!checkmate::test_atomic_vector(data)) {
-    stop("supplied data is not a vector")
+    stop("supplied data is not a vector!")
   }
   if (!checkmate::test_numeric(data)) {
-    stop("supplied data is not numeric")
+    stop("supplied data is not numeric!")
   }
   n <- length(data)
   emp_mean <- mean(data, na.rm = TRUE)
